@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { ApolloProvider as _ApolloProvider } from '@apollo/client';
 
 const apolloClient = new ApolloClient({
-    uri: '/api/graphql',
+    uri: 'https://countries.trevorblades.com',
     cache: new InMemoryCache(),
 });
 

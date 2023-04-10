@@ -1,15 +1,17 @@
 import { makeStyles } from '@mui/styles';
 import Head from 'next/head';
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchDataSuccess } from '../redux/DataSlice/dataSlice';
+import { RootState } from '../redux/rootReducer';
 
 export default function Home() {
     const classes = useStyles();
+    const s = useSelector((state: RootState) => state.data.data);
+    console.log('#n s: ', s);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log('#m distpa: ');
         dispatch(fetchDataSuccess('this id data'));
     });
 
