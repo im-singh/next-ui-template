@@ -1,0 +1,59 @@
+.root{
+    min-width: 300px;
+    padding:10px;
+}
+
+.root:hover{
+    background-color: #74757f;
+    color: white;
+}
+
+.root:hover .numb{
+    color: gray;
+}
+
+.root:hover .imgIcon{
+    display: none;
+}
+
+.root:hover .text{
+    color: white;
+}
+
+.root:hover .imgIconHover{
+    display: block;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numb{
+    color: #74757f;
+    font-size: 58px;
+}
+
+.text{
+    font-size: 18px;
+    width: 70%;
+}
+
+.images{
+    width: 50px;
+    height: 40px;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+}
+
+.imgIconHover{
+    display: none;
+}
+
+.imgIcon{
+    display: block;
+}

@@ -1,6 +1,7 @@
 import { Roboto } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
+import { DefaultTheme } from '@mui/styles';
 
 export const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -13,7 +14,7 @@ export const roboto = Roboto({
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#556cd6',
+      main: '#74757f',
       contrastText:'red',
     },
     secondary: {
@@ -29,3 +30,12 @@ const theme = createTheme({
 });
 
 export default theme;
+
+export interface AppTheme extends DefaultTheme{
+  palette: {
+    primary:{
+      main:string,
+      contrastText:string,
+    }
+  }
+}

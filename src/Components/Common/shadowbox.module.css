@@ -1,0 +1,9 @@
+.root {
+    box-shadow: 1px 1px 8px 2px #e8e8e8c2;
+    cursor: pointer;
+}
+
+.root:hover {
+    background-color: '#74757f';
+    color: 'white';
+}
