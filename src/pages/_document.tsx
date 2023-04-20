@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
                         name="theme-color"
                         content={theme.palette.primary.main}
                     />
+                    <meta name="emotion-insertion-point" content="" />
                 </Head>
                 <body>
                     <Main />
